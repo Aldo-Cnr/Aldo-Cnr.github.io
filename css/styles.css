@@ -1,0 +1,639 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cutive Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+hr{
+    border:none;
+    width: 100%;
+    height: 5px; /* Establece la altura de la línea */
+    border: none; /* Elimina cualquier borde predeterminado */
+    background: linear-gradient(to right, transparent, cyan, transparent);
+    background-size: 100% 20%;margin-top: 100px;
+}
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* body{
+    font-size: 14px;
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    color: cyan;
+} */
+
+
+/* Menu */
+.cont-header{
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    box-shadow: 0 0 7px 1px rgb(0, 255, 255); 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.cont-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.cont-header header .logo i{
+    /* background-color: rgb(31, 30, 30); */
+    color: cyan;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.cont-header header .logo span{
+    font-size: 20px;
+    font-weight: normal;
+    color: cyan;
+}
+.cont-header header .logo small{
+    font-weight: normal;
+}
+.cont-header ul{
+    display: flex;
+    list-style: none;
+}
+.cont-header header nav ul li a{
+    text-align: none;
+    color: rgb(219, 242, 242);
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.cont-header header nav ul li a:hover{
+    color: cyan;
+}
+.nav-responsive{
+    /* background-color: rgb(31, 30, 30); */
+    color: cyan;
+    font-size: large;
+    border-radius: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Seccion Inicio */
+.inicio{
+    background: url(/img/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: rgb(86, 220, 220);
+    display: flex;
+    align-items: center;
+}
+.inicio .cont-banner{
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 0 7px 1px rgb(0, 255, 255); 
+}
+.inicio .cont-banner img{ 
+    box-shadow: 0 0 7px 1px rgb(0, 255, 255); 
+    margin-top: 40px;
+    border: 10px solid rgb(219, 242, 242); 
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+}
+.inicio .cont-banner h1{
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.inicio .cont-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .cont-banner .redes a{
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.inicio .cont-banner .redes a:hover{
+    background-color:rgb(21, 33, 33) ;
+    color: cyan;
+}
+
+
+
+
+/* Seccion Sobre mi */
+.sobremi{
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    color: whitesmoke;
+    padding: 50px 20px;
+}
+.sobremi .cont-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 35px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .cont-seccion p{
+    text-align: center;
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .cont-seccion p span{
+    color: cyan;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: cyan;
+    width: 130px;
+}
+.sobremi .fila .col .cont-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .cont-intereses .interes{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(39, 49, 53);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.sobremi .fila .col .cont-intereses .interes:hover{
+    background-color: rgb(3, 94, 94);
+}
+.sobremi .fila .col .cont-intereses .interes span{
+    font-size: x-small;
+}
+.sobremi .cont-seccion a{
+   text-decoration: none;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: whitesmoke;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg,rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+
+
+/* Seccion Skills */
+.skills{
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    color: whitesmoke;
+    padding: 50px 20px;
+}
+.skills .cont-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 35px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: rgb(38, 41, 41);
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.skills .skill .progreso{
+    background-color: cyan;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: cyan;
+    border-radius: 50px;
+    line-height: 30px;
+    text-align: center;
+    top: -11px;
+    right: -15px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+/* Estas clases se agregan dinamicamente mediante JS */
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+@keyframes html{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+@keyframes css{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+.skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.skills .skill .mysql{
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+@keyframes mysql{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+/* Skills  profesionales*/
+.skills .skill .comun{
+    width: 0%;
+    animation: 2s comun forwards;
+}
+@keyframes comun{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .equipo{
+    width: 0%;
+    animation: 2s equipo forwards;
+}
+@keyframes equipo{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.skills .skill .creativo{
+    width: 0%;
+    animation: 2s creativo forwards;
+}
+@keyframes creativo{
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .lider{
+    width: 0%;
+    animation: 2s lider forwards;
+}
+@keyframes lider{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+
+
+/* Seccion proyectos */
+.proyect{
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    color: whitesmoke;
+    padding: 50px 20px;
+}
+.proyect .cont-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+.proyect h2{
+    font-size: 35px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+.proyect .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.proyect .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+}
+.proyect .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.proyect .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(90deg,rgba(20, 56, 77, 0.8) 30%, rgba(1, 80, 87, 0.8) 46%, rgba(20, 56, 77, 0.8) 70% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.proyect .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.proyect .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.proyect .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+
+
+/* Seccion Contacto */
+.contacto{
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    color: whitesmoke;
+    padding: 50px 20px;
+}
+.contacto .cont-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 35px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(14, 43, 60);
+    color: cyan;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: whitesmoke;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg,rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+
+
+
+/* Footer */
+footer{
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(20,56,77,1) 30%, rgba(1,80,87,1) 46%, rgba(20,56,77,1) 70%, rgba(10,10,10,1) 100%);
+    color: cyan;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+footer .redes a:hover{
+    background-color:rgb(21, 33, 33) ;
+    color: cyan;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50px;
+    line-height: 55px;
+    font-size: 25px;
+}
+footer .arriba:hover{
+    background-color:rgb(21, 33, 33) ;
+    color: cyan;
+}
+
+
+/* Seccion Responsive */
+@media  screen and (max-width: 800px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+        margin-right: 10px;    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: rgb(21, 33, 33);
+        width: 130px;
+    }
+    nav.responsive ul{
+        display: block;
+    }
+    nav.responsive ul li{
+        border:1px solid whitesmoke;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .proyect .galeria{
+        display: block;
+        width: 100%;
+    }
+    .proyect .galeria .proyecto{
+        max-width: 100%;
+    }
+    .proyect .galeria .proyecto img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}

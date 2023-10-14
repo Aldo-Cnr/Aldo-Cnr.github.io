@@ -19,7 +19,7 @@ hr{
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: -1;
+    z-index: 1;
 }
 
 /* body{
@@ -37,7 +37,7 @@ hr{
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 10;
 }
 .cont-header header{
     max-width: 1100px;
@@ -91,12 +91,14 @@ hr{
 
 /* Seccion Inicio */
 .inicio{
+    position: relative;
     background: url(/img/background.jpg);
     background-size: cover;
     height: 100vh;
     color: rgb(86, 220, 220);
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 .inicio .cont-banner{
     padding: 20px;
@@ -106,6 +108,7 @@ hr{
     text-align: center;
     border-radius: 40px;
     box-shadow: 0 0 7px 1px rgb(0, 255, 255); 
+    
 }
 .inicio .cont-banner img{ 
     box-shadow: 0 0 7px 1px rgb(0, 255, 255); 
@@ -162,6 +165,7 @@ hr{
     color: whitesmoke;
     text-align: center;
     padding: 20px 0;
+    z-index: 10;
 }
 .sobremi .cont-seccion p{
     text-align: center;
@@ -172,6 +176,7 @@ hr{
 .sobremi .cont-seccion p span{
     color: cyan;
     font-weight: bold;
+    z-index: 10;
 }
 .sobremi .fila{
     display: flex;
@@ -182,9 +187,11 @@ hr{
 .sobremi .fila .col h3{
     font-size: 25px;
     margin-bottom: 25px;
+    z-index: 1o;
 }
 .sobremi .fila .col ul{
     list-style: none;
+    z-index: 10;
 }
 .sobremi .fila .col ul li{
     margin: 12px 0;
@@ -209,6 +216,7 @@ hr{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    z-index: 5;
 }
 .sobremi .fila .col .cont-intereses .interes:hover{
     background-color: rgb(3, 94, 94);
@@ -231,7 +239,7 @@ hr{
     font-size: 16px;
     color: whitesmoke;
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 .sobremi button .overlay{
     position: absolute;
@@ -265,6 +273,7 @@ hr{
     color: whitesmoke;
     text-align: center;
     padding: 20px 0;
+    z-index: 10;
 }
 .skills .fila{
     display: flex;
@@ -289,6 +298,7 @@ hr{
     position: relative;
     margin-bottom: 30px;
     border-radius: 5px;
+    z-index: 5;
 }
 .skills .skill .progreso{
     background-color: cyan;
@@ -423,6 +433,7 @@ hr{
     max-width: 340px;
     height: fit-content;
     margin: 10px;
+    z-index: 5;
 }
 .proyect .galeria .proyecto img{
     width: 100%;
@@ -481,6 +492,7 @@ hr{
     padding: 10px;
     position: relative;
     margin: auto;
+    z-index: 5;
 }
 .contacto .col input, .contacto .col textarea{
     display: block;
@@ -532,6 +544,7 @@ footer{
     text-align: center;
     position: relative;
     width: 100%;
+    z-index: 10;
 }
 footer .redes{
     margin-bottom: 20px;

@@ -18,30 +18,7 @@
     
 </head>
 <body>
-
-  <!-- Menu de encabezado -->
-  <div class="cont-header">
-    <header>
-      <div class="logo">
-        <i class="bi bi-code-slash"></i>
-        <span class="typed"></span>
-      </div>
-      <nav id="nav">
-        <ul>
-          <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-          <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
-          <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
-          <li><a href="#proyec" onclick="seleccionar()">Proyectos</a></li>
-          <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-        <i class="bi bi-list"></i>
-      </div>
-    </header>
-  </div>
-
-
+  <div id="particles-js"></div>
 
   <!-- Seccion inicio -->
   <section id="inicio" class="inicio">
@@ -59,6 +36,31 @@
       </div>
     </div>
   </section>
+
+
+
+
+    <!-- Menu de encabezado -->
+    <div class="cont-header">
+      <header>
+        <div class="logo">
+          <i class="bi bi-code-slash"></i>
+          <span class="typed"></span>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+            <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+            <li><a href="#proyec" onclick="seleccionar()">Proyectos</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="bi bi-list"></i>
+        </div>
+      </header>
+    </div>
 
 
 
@@ -286,11 +288,11 @@
       <div class="fila">
         <!-- Formulario -->
         <div class="col">
-          <input type="text" placeholder="Tu nombre">
-          <input type="tel" placeholder="Numero telefonico">
-          <input type="email" placeholder="Direccion de correo">
-          <input type="text" placeholder="Tema">
-          <textarea name="" id="" cols="30" rows="5"></textarea>
+          <input type="text"  name="name" placeholder="Ingresa tu nombre">
+          <input type="tel" name="phone" placeholder="Numero telefonico">
+          <input type="email" name="email" placeholder="Direccion de correo">
+          <input type="text" name="tema" placeholder="Tema">
+          <textarea name="message" id="" cols="30" rows="5"></textarea>
           <button>Enviar Mensaje <i class="bi bi-send"></i>
             <span class="overlay"></span>
           </button>
@@ -313,6 +315,9 @@
     </div>
   </footer>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="/js/particles-app.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="/js/escritura.js"></script>
   <script src="/js/menu.js"></script>

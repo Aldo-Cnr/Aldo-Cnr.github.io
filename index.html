@@ -287,16 +287,16 @@
       <h2>Contacto</h2>
       <div class="fila">
         <!-- Formulario -->
-        <div class="col">
-          <input type="text"  name="name" placeholder="Ingresa tu nombre">
-          <input type="tel" name="phone" placeholder="Numero telefonico">
-          <input type="email" name="email" placeholder="Direccion de correo">
-          <input type="text" name="tema" placeholder="Tema">
-          <textarea name="message" id="" cols="30" rows="5"></textarea>
-          <button>Enviar Mensaje <i class="bi bi-send"></i>
+        <form action="https://formsubmit.co/aldoconrado37@gmail.com" method="POST" class="col">
+          <input type="text"  name="name" placeholder="Ingresa tu nombre" required>
+          <input type="tel" name="phone" placeholder="Numero telefonico" required>
+          <input type="email" name="email" placeholder="Direccion de correo" required>
+          <input type="text" name="tema" placeholder="Tema" required>
+          <textarea name="message" id="" cols="30" rows="5" required></textarea>
+          <button type="submit">Enviar Mensaje <i class="bi bi-send"></i>
             <span class="overlay"></span>
           </button>
-        </div>
+        </form>
         <!--  -->
       </div>
     </div>

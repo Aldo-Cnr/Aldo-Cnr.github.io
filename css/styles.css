@@ -92,7 +92,7 @@ hr{
 /* Seccion Inicio */
 .inicio{
     position: relative;
-    background: url(/img/background.jpg);
+    background: url(/img/background.webp);
     background-size: cover;
     height: 100vh;
     color: rgb(86, 220, 220);

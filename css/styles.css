@@ -464,7 +464,26 @@ hr{
 .proyect .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
-
+.proyect .galeria .proyecto .overlay p{
+    font-size: 15px;
+}
+.proyect .galeria .proyecto .overlay a{
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 45px;
+    margin: 5px auto;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.proyect .galeria .proyecto .overlay a:hover{
+    background-color:rgb(21, 33, 33) ;
+    color: cyan;   
+}
 
 
 /* Seccion Contacto */
@@ -544,7 +563,7 @@ footer{
     text-align: center;
     position: relative;
     width: 100%;
-    z-index: 10;
+    z-index: 5;
 }
 footer .redes{
     margin-bottom: 20px;
@@ -650,8 +669,7 @@ footer .arriba:hover{
         width: 100%;
     }
 }
-
-@media screen and (max-height: 600px){
+@media screen and   (max-height: 600px){
     .inicio .cont-banner{
         max-width: 200px;
         max-height: 300px;
